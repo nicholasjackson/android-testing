@@ -3,7 +3,9 @@ This repository contains various examples of the different Methods of Android Te
 
 ## Branches
 
-### Junit3
+### JUnit3 TestCase and ActivityInstrumentaionTestCase Examples
+[https://github.com/nicholasjackson/android-testing/tree/junit3](https://github.com/nicholasjackson/android-testing/tree/junit3)
+
 ### Junit4
 ### Calabash
 ### CucumberJVM
