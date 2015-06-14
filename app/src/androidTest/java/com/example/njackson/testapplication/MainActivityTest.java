@@ -1,9 +1,22 @@
 package com.example.njackson.testapplication;
 
-import android.test.ActivityInstrumentationTestCase2;
+import android.support.test.espresso.ViewInteraction;
+import android.support.test.espresso.action.ViewActions;
+import android.support.test.espresso.assertion.ViewAssertions;
+import android.support.test.rule.ActivityTestRule;
 import android.test.UiThreadTest;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.matcher.ViewMatchers.isChecked;
+import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by njackson on 14/06/15.
@@ -11,61 +24,18 @@ import android.widget.TextView;
  * action.  Remember even R2 makes mistakes and the last thing you need when trying to escape the Death Star
  * is a hyperdrive failure.
  */
-public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
+public class MainActivityTest {
 
-    private MainActivity mActivity;
-    private Switch mHyperdriveSwitch;
-    private TextView mStatusLog;
+    @Rule
+    public ActivityTestRule<MainActivity> activityRule = new ActivityTestRule<>(MainActivity.class);
 
-    public MainActivityTest() {
-       super(MainActivity.class);
-    }
-
-    public MainActivityTest(Class<MainActivity> activityClass) {
-        super(activityClass);
-    }
-
-    /*
-     * setUp will run before every instance of your test methods
-     * it is a good place to verify that the view has been correctly initialised
-     * you can test that you have the various components that your activity will rely on.
-     * This is especially useful when you have a pesky astromech droid messing with your controls.
-     */
-    @Override
-    protected void setUp() throws Exception {
-        super.setUp();
-
-        mActivity = getActivity();
-        mHyperdriveSwitch = (Switch)mActivity.findViewById(R.id.hyperdriveSwitch);
-        mStatusLog = (TextView) mActivity.findViewById(R.id.statusLog);
-
-        assertNotNull(mHyperdriveSwitch);
-        assertNotNull(mStatusLog);
-    }
-
-    /*
-     * @UiThreadTest lets us run all the contents of this test method on the UI thread
-     * when trying to interact with buttons from a thread which is not the main UI thread
-     * Android will throw an exception
-     */
-    @UiThreadTest
+    @Test
     public void testWhenHyperDriveSwitchEnabledStatusLogUpdated() {
-        mHyperdriveSwitch.setChecked(false);
-        mHyperdriveSwitch.callOnClick();
-
-        CharSequence statusText = mStatusLog.getText();
-
-        assertTrue(statusText.toString().contains("Hyperdrive enabled"));
+        onHyperDriveSwitch.perform(ViewActions.click());
+        onHyperDriveSwitch.check(ViewAssertions.matches(isChecked()));
     }
 
-    @UiThreadTest
-    public void testWhenHyperDriveSwitchDisabledStatusLogUpdated() {
-        mHyperdriveSwitch.setChecked(true);
-        mHyperdriveSwitch.callOnClick();
+    private ViewInteraction onHyperDriveSwitch = onView(withId(R.id.hyperdriveSwitch));
 
-        CharSequence statusText = mStatusLog.getText();
-
-        assertTrue(statusText.toString().contains("Hyperdrive disabled"));
-    }
 
 }
