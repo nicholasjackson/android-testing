@@ -1,35 +1,14 @@
-# JUnit3 TestCase and ActivityInstrumentaionTestCase Examples
+# Calabash
 This branch contains two tests using JUnit3, one AndroidTestCase and one ActivityInstrumentation, both of these tests run either on a physical device or will run in an android virtual machine.
 
+## Installation
+1. You need Ruby 2.1.3 for Calabash to work correctly I recommend RVM to keep things clean. [https://rvm.io/](https://rvm.io/)
+2. You will need bundler `gem install bundler`
+3. Install the calabash-android gem: `bundle`
+
 ## How to run
-You can either run the test cases from AndroidStudio using the Test configuration or from the command line using Gradle `./gradlew connectedCheck`.
-
-## TestCase (HyperspaceJumpTest)
-"Travelin' through hyperspace ain't like dustin' crops, boy! Without precise calculations we could fly right through a star or bounce too close to a supernova, and that'd end your trip real quick, wouldn't it?"
-
-And thats why you need unit tests, this example looks at how you can write some simple unit tests for your nav computer.
-
-TestCase is the simplest testing class in the Android framework.
-
-### Documentation:
-[http://developer.android.com/reference/junit/framework/TestCase.html](http://developer.android.com/reference/junit/framework/TestCase.html)
-
-## ActivityInstrumentaionTestCase2 (MainActivityTest)
-This is a simple test which allows us to check that one action on the UI correctly triggers another action.  Remember even R2 makes mistakes and the last thing you need when trying to escape the Death Star is a hyperdrive failure.
-
-### Documentation:
-[https://developer.android.com/reference/android/test/ActivityInstrumentationTestCase2.html](https://developer.android.com/reference/android/test/ActivityInstrumentationTestCase2.html)
-[https://developer.android.com/training/activity-testing/activity-basic-testing.html](https://developer.android.com/training/activity-testing/activity-basic-testing.html)
-# android-testing
-This repository contains various examples of the different Methods of Android Testing.  Each branch contains a different methodology.
-
-## Branches
-
-### JUnit3 TestCase and ActivityInstrumentaionTestCase Examples
-[https://github.com/nicholasjackson/android-testing/tree/junit3](https://github.com/nicholasjackson/android-testing/tree/junit3)
-
-### Junit4
-### Calabash
-### CucumberJVM
-### Espresso
-### Mockito
+You can run the test cases from the command line using:
+```
+./gradlew clean build  
+calabash-android run "$(pwd)/app/build/outputs/apk/app-debug-unaligned.apk"
+```
