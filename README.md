@@ -20,3 +20,16 @@ This is a simple test which allows us to check that one action on the UI correct
 ### Documentation:
 [https://developer.android.com/reference/android/test/ActivityInstrumentationTestCase2.html](https://developer.android.com/reference/android/test/ActivityInstrumentationTestCase2.html)
 [https://developer.android.com/training/activity-testing/activity-basic-testing.html](https://developer.android.com/training/activity-testing/activity-basic-testing.html)
+# android-testing
+This repository contains various examples of the different Methods of Android Testing.  Each branch contains a different methodology.
+
+## Branches
+
+### JUnit3 TestCase and ActivityInstrumentaionTestCase Examples
+[https://github.com/nicholasjackson/android-testing/tree/junit3](https://github.com/nicholasjackson/android-testing/tree/junit3)
+
+### Junit4
+### Calabash
+### CucumberJVM
+### Espresso
+### Mockito
