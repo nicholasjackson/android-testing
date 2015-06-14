@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b09ab2e-43f5-4a39-9287-719f172f4929" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/classes/HyperspaceJumpTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/classes/HyperspaceJumpTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/MainActivityTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/MainActivityTest.java" />
     </list>
     <ignored path="android-testing.iws" />
@@ -72,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivityTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivityTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/MainActivityTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3426396">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#708#709#0" expanded="true" />
@@ -118,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HyperspaceJumpTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HyperspaceJumpTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/classes/HyperspaceJumpTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.30456853">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1428,12 +1429,12 @@
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/classes/CalculatorTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/njackson/testapplication/classes/Calculator.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/njackson/testapplication/classes/HyperspaceJump.java" />
-        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/classes/HyperspaceJumpTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/njackson/testapplication/classes/NavComputer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/njackson/testapplication/classes/INavComputer.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/njackson/testapplication/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/MainActivityTest.java" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/classes/HyperspaceJumpTest.java" />
       </list>
     </option>
   </component>
@@ -1910,16 +1911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/classes/HyperspaceJumpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/njackson/testapplication/classes/INavComputer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1976,14 +1967,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/MainActivityTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3426396">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#708#709#0" expanded="true" />
             <element signature="e#748#749#0" expanded="true" />
             <element signature="e#814#815#0" expanded="true" />
             <element signature="e#850#851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/njackson/testapplication/classes/HyperspaceJumpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30456853">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

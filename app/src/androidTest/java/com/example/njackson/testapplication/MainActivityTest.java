@@ -25,6 +25,12 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         super(activityClass);
     }
 
+    /*
+     * setUp will run before every instance of your test methods
+     * it is a good place to verify that the view has been correctly initialised
+     * you can test that you have the various components that your activity will rely on.
+     * This is especially useful when you have a pesky astromech droid messing with your controls.
+     */
     @Override
     protected void setUp() throws Exception {
         super.setUp();
@@ -37,6 +43,11 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         assertNotNull(mStatusLog);
     }
 
+    /*
+     * @UiThreadTest lets us run all the contents of this test method on the UI thread
+     * when trying to interact with buttons from a thread which is not the main UI thread
+     * Android will throw an exception
+     */
     @UiThreadTest
     public void testWhenHyperDriveSwitchEnabledStatusLogUpdated() {
         mHyperdriveSwitch.setChecked(false);

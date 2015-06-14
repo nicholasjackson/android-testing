@@ -1,12 +1,12 @@
 package com.example.njackson.testapplication.classes;
-
-import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.SmallTest;
+
+import junit.framework.TestCase;
 
 /**
  * Created by njackson on 14/06/15.
  */
-public class HyperspaceJumpTest extends AndroidTestCase {
+public class HyperspaceJumpTest extends TestCase {
 
     private NavComputer mNavComputer;
 
