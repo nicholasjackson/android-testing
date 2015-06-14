@@ -39,7 +39,7 @@ public class HyperspaceJumpTest extends AndroidTestCase {
     @SmallTest
     public void testClearHyperSpaceJumpsClearsCollection() {
         mNavComputer.addHyperSpaceJump(new HyperspaceJump(1000, 2000, 3000));
-        
+
         mNavComputer.clearHyperspaceJumps();
         assertEquals(mNavComputer.getHyperspaceJumps().size(),0);
     }
