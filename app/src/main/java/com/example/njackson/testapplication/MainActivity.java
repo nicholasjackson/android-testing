@@ -4,6 +4,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Switch;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +15,20 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final Switch hyperDriveSwitch = (Switch) findViewById(R.id.hyperdriveSwitch);
+        final TextView statusLog = (TextView) findViewById(R.id.statusLog);
+
+        hyperDriveSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!hyperDriveSwitch.isChecked()) {
+                    statusLog.append("Hyperdrive enabled");
+                } else {
+                    statusLog.append("Hyperdrive disabled");
+                }
+            }
+        });
     }
 
     @Override

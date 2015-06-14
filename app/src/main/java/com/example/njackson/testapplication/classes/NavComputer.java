@@ -9,7 +9,7 @@ import java.util.List;
  * calculations we could fly right through a star or bounce too close to a supernova,
  * and that'd end your trip real quick, wouldn't it?"
  */
-public class NavComputer {
+public class NavComputer implements INavComputer {
 
     List<HyperspaceJump> mJumps = new ArrayList<HyperspaceJump>();
 
