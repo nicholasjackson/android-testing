@@ -10,5 +10,5 @@ This branch contains two tests using JUnit3, one AndroidTestCase and one Activit
 You can run the test cases from the command line using:
 ```
 ./gradlew clean build  
-calabash-android run "$(pwd)/app/build/outputs/apk/app-debug-unaligned.apk"
+calabash-android run "$(pwd)/app/build/outputs/apk/app-debug.apk"
 ```

@@ -3,6 +3,7 @@
 *.ap_
 
 .DS_Store
+screenshot_*.png
 
 # Files for the Dalvik VM
 *.dex
