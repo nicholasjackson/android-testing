@@ -1,4 +1,4 @@
-# Basic JUnit3 TestCase and ActivityInstrumentaionTestCase Examples
+# JUnit3 TestCase and ActivityInstrumentaionTestCase Examples
 This branch contains two tests using JUnit3, one AndroidTestCase and one ActivityInstrumentation, both of these tests run either on a physical device or will run in an android virtual machine.
 
 ## How to run
