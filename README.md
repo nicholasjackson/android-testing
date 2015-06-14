@@ -1,6 +1,9 @@
 # Basic JUnit3 TestCase and ActivityInstrumentaionTestCase Examples
 This branch contains two tests using JUnit3, one AndroidTestCase and one ActivityInstrumentation, both of these tests run either on a physical device or will run in an android virtual machine.
 
+## How to run
+You can either run the test cases from AndroidStudio using the Test configuration or from the command line using Gradle `./gradlew connectedCheck`.
+
 ## TestCase (HyperspaceJumpTest)
 "Travelin' through hyperspace ain't like dustin' crops, boy! Without precise calculations we could fly right through a star or bounce too close to a supernova, and that'd end your trip real quick, wouldn't it?"
 
