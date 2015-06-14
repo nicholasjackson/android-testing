@@ -2,14 +2,14 @@ package com.example.njackson.testapplication;
 
 import android.test.ActivityInstrumentationTestCase2;
 import android.test.UiThreadTest;
-import android.test.suitebuilder.annotation.SmallTest;
-import android.text.SpannableStringBuilder;
-import android.view.View;
 import android.widget.Switch;
 import android.widget.TextView;
 
 /**
  * Created by njackson on 14/06/15.
+ * This is a simple test which allows us to check that one action on the UI correctly triggers another
+ * action.  Remember even R2 makes mistakes and the last thing you need when trying to escape the Death Star
+ * is a hyperdrive failure.
  */
 public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
 
