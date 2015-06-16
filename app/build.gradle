@@ -11,8 +11,10 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        testInstrumentationRunner "com.example.njackson.testapplication.Instrumentation"
+    }
+    lintOptions {
+        abortOnError false
     }
     packagingOptions {
         exclude 'LICENSE.txt'
@@ -37,5 +39,8 @@ dependencies {
     // Set this dependency to use JUnit 4 rules
     androidTestCompile 'com.android.support.test:rules:0.3'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2'
+    androidTestCompile 'info.cukes:cucumber-core:1.2.2'
+    androidTestCompile 'info.cukes:cucumber-android:1.2.2@jar'
+    androidTestCompile 'info.cukes:cucumber-java:1.2.2'
 
 }
